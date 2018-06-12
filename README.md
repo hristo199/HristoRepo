@@ -1,3 +1,3 @@
 Norse Mythology project.
 
-https://github.com/hristo199/HristoBratsov
+https://hristo199.github.io/HristoRepo/
