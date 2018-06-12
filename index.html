@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>Norse Mythology</title>
+	
+    <script src="scripts/jquery-2.2.4.min.js"></script>
+	
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/default-fonts.css">
+   
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navigation-menu.css">
+    <link rel="stylesheet" href="styles/main-page-content.css">
+    <link rel="stylesheet" href="styles/log in and register.css">
+    <link rel="stylesheet" href="styles/footer-holder.css">
+    <link rel="stylesheet" href="styles/viewHome.css">
+    <link rel="stylesheet" href="styles/view-create-posts.css">
+	<link rel="stylesheet" href="styles/modal-images.css">
+</head>
+<body>
+   
+    <div id="main">
+	<div id="bri">
+		<h1>
+             <img src="images/Thunder.png"  alt="logo" id="logo" >
+                   </h1>
+		</div>
+        <div class="row" id="broki">
+            <div class="col-md-3" id="side-nav-menu">
+                <aside class="bar">   
+                    </div>
+                    <nav class="page-navigation gushing">
+                        <a href="#" id="linkHome" class="single-menu-element-link">
+                            Home
+                        </a>
+                        <a href="#" id="linkLogin" class="single-menu-element-link">
+                            Login
+                        </a>
+                        <a href="#" id="linkRegister" class="single-menu-element-link">
+                            Register
+                        </a>
+                        <a href="#" id="linkCreatePost" class="single-menu-element-link">
+                            Create post
+                        </a>
+                        <a href="#" id="linkLogout" class="single-menu-element-link">
+                            Logout
+                        </a>
+                            <a href="#" id="linkListPosts" class="single-menu-element-link">
+                               <h1>Posts</h1>
+							   <hr>
+                            </a>
+                            <div id="post-title"></div>
+                        </div>
+                    </nav>
+                </aside>
+			</div>
+          <div class="col-md-9" id="main-page-content">
+                <section id="loadingBox">Please,wait a moment!.....</section>
+                <section id="infoBox" onclick="$(this).hide()">Info.....</section>
+                <section id="errorBox" onclick="$(this).hide()">Error.....</section>
+                <section id="viewHome">
+			<article class="norse">	
+					<h1>Some of the Norse Gods</h1>
+			<article class="norse">	
+						<h4>Odin</h4>			
+				<p>Odin is the chief divinity of the Norse pantheon, the foremost of the Aesir. Odin is a son of Bor and Bestla. He is called Alfadir, Allfather, for he is indeed father of the gods.
+		           With Frigg he is the father of Balder, Hod, and Hermod. He fathered Thor on the goddess Jord; and the giantess Grid became the mother of Vidar.
+				 Odin is the chief divinity of the Norse pantheon, the foremost of the Aesir. Odin is a son of Bor and Bestla. He is called Alfadir, Allfather, for he is indeed father of the gods.
+		           With Frigg he is the father of Balder, Hod, and Hermod. He fathered Thor on the goddess Jord; and the giantess Grid became the mother of Vidar.</p>
+						<div class="clear"></div>
+							</article>
+			<article class="norse">
+						<h4>Balder</h4>
+				<p>The god of light, joy, purity, beauty, innocence, and reconciliation. Son of Odin and Frigg, he was loved by both gods and men and was considered to be the best of the gods. 
+					He had a good character, was friendly, wise and eloquent, although he had little power.</p>
+						<div class="clear"></div>
+								</article>
+			<article class="norse">
+						<h4>Freya</h4>
+				<p>In Norse mythology, Freya is a goddess of love and fertility, 
+				and the most beautiful and propitious of the goddesses. 
+				She is the patron goddess of crops and birth, the symbol of sensuality and was called upon in matters of love. She loves music, 
+				spring and flowers, and is particularly fond of the elves (fairies). Freya is one of the foremost goddesses of the Vanir.</p>
+					<div class="clear"></div>
+							</article>
+                </section>          
+                <section id="viewLogin">
+                   <h1 class="diagoth"><b>Login</b></h1>
+                    <h3 class="diagoth" style="color:orange">
+                        Write down your existing account,please:
+                    </h3>
+                    <br>                 
+                    <div class="login-form-1">                      
+                        <div id="login-form" class="text-left">
+                            <div class="main-login-form">
+                                <form  id="loginForm">
+                                    <div class="login-group">                                     
+                                        <div class="form-group">
+                                            <input type="text" id="loginUsername" placeholder="Username" required="true">
+                                        </div>                                      
+                                        <div class="form-group">
+                                            <input type="password" id="loginPassword" placeholder="Password" required="true">
+												</div>                        
+                                      <div class="form-group">
+                                           <input type="submit" class="login-button" value="Login" />
+                                       </div>
+                                   </div>
+                               </form>
+                           </div>
+                       </div>                 
+                    </div>
+                           </section>         
+                <section id="viewRegister" style="text-align: center;">
+                    <h1 class="diagoth"><b>Register</b></h1>
+                    <h3 class="diagoth" style="color:orange">
+                        Write down your future username and password,please:
+                    </h3>                  
+                    <div class="login-form-1">                       
+                        <div id="register-form" class="text-left">
+                            <div class="main-login-form">
+                                <form action="POST" id="registerForm">
+                                    <div class="login-group">
+                                        <div class="form-group">
+                                            <input type="text" id="registerUsername" placeholder="Username"  required="true">
+                                        </div>                             
+                                        <div class="form-group">
+                                            <input type="password" id="registerPassword" placeholder="Password"  required="true">
+												</div>                      
+                                        <div class="form-group">
+                                            <input type="submit" class="login-button" value="Register" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                   
+                    </div>                 
+                   <br>
+                   <br>
+					</section>
+                <section id="viewListPosts">
+                    <div class="row" id="postPreview">
+                        <div id="previevwHolder"></div>
+                    </div>
+						</section>
+                <section id="viewCreatePost">               
+                    <div class="login-form-1">
+                        <h1 class="alsandra" style="color: snow">CREATE POST</h1>
+                        <hr />
+                        <br>                      
+                        <div id="create-post-form" class="text-left">
+                            <div class="main-login-form">
+                                <form action="POST" id="createPostForm">
+                                    <div class="login-group">                                     
+                                        <div class="form-group">
+                                            <input type="text" maxlength="100" id="title" placeholder="Title" required="true">
+                                        </div>                                    
+                                        <div class="form-group">
+                                            <input type="text" maxlength="1000" id="description" placeholder="Description" required="true">
+											</div>                                       
+                          <div class="form-group">
+                           <input type="text"  maxlength="100" id="imgUrl" placeholder="Image url" required="true">
+                                       </div>                                      
+                                  <div class="form-group">
+                                      <input type="text" maxlength="100" id="articleUrl" placeholder="Article url"  required="true">
+											</div>
+                                        <div class="form-group">
+                                            <input type="submit" class="login-button" value="Post" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+						</section>
+                <section id="json-via-ajax">
+        
+                    <button id="listPosts" class='cool_btn1 teal'>
+                        <h1 class='top'>Log in first</h1>
+                        <h2> <i>Created posts</i></h2>
+                    </button>
+                    <div class="row" id="ajaxViaJsonPreview">
+                        <div id="usersHolder"></div>
+                        <div id="postsHolderRaw"></div>
+                    </div>
+                </section>
+            </div>
+					</div>
+			</div>
+				<hr>
+			<footer>
+        <div id="footer-holder"  style="font-family:Georgia">
+            <span">Collage Project.</span>
+            <p>Developed by Hristo Bratsov-Student of University of Plovdiv-"Paisii Hilendarski".</p>
+                <a href="https://github.com/hristo199" target="_blank">
+                 <img src="images/git.png" alt="GitHub" title="Github" width="50px">
+            </div>
+        </div>
+		</footer>
+    <div id="myModal" class="modal">
+       <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+			<img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    
+	<script src="scripts/index.js"></script>
+    <script src="scripts/side-navigation.js"></script>
+    <script src="scripts/modal-images.js"></script>
+    <script src="scripts/main-page-content.js"></script>
+
+</body>
+</html>

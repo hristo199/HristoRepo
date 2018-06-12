@@ -1,0 +1,75 @@
+body{ 
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+	 background-image:url("../images/sea.jpg");
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+#status {
+    height: 800px;
+}
+#main-content {
+    height: 680px;
+    display: none;
+    font-size: 1.8em !important;
+    -webkit-background-size: 80%;
+    background-size: 85%;
+}
+#infoBox{
+    text-align: center;
+    font-family: norse !important;
+    background-color: orange !important;
+    font-size: 2em;
+}
+#linkLogout{
+    display: block;
+}
+#linkLogout > a{
+    color: #4cff00 !important;
+}
+#linkLogout > a:hover{
+    color: #ffff00 !important;
+}
+#userMsg{
+    color: #ffff00 !important;
+}
+#userMsg:hover{
+    color: #4cff00 !important;
+}
+.soc-icons>div>a{
+    margin: 20px;
+}
+@media (min-width: 320px){
+    }
+}
+@media (min-width: 768px){
+    .nav-tabs-justified>li>a {
+        border-bottom: 0px !important;
+
+    }
+    #login-form{
+        width: 40%;
+    }
+}
+@media (min-width: 1024px){
+    }
+    #login-form{
+        width: 40%;
+    }
+}
+@media (max-width: 360px){
+    #main-content{
+        background: none;
+    }
+    #login-form{
+        width: 64%;
+    }
+	

@@ -1,0 +1,14 @@
+.norse{
+    width: 100%;
+	color:white;
+	padding:5px;
+	border:solid #e9eaef21;
+	font-family:norse;
+	font-size:1.3em;
+}
+#sectionWrapper a{
+    text-decoration: none;
+}
+#sectionWrapper a:hover{
+    color: #cec8c8;
+}

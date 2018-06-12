@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('../fonts/norsee.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Ritzy';
+    src: url('../fonts/ritzy.tff') format('truetype');
+}
+@font-face {
+    font-family: 'Gushing';
+    src: url('../fonts/gushing.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Diagoth';
+    src: url('../fonts/diagoth.ttf') format('truetype');
+}
+
+.norsee{
+    font-family:Norse;
+}
+.ritzy{
+    font-family: Ritzy;
+}
+.gushing{
+    font-family: Gushing;
+}
+	
+}
+.diagoth{
+	font-family:Diagoth;
+}
